@@ -16,7 +16,7 @@ const ContactForm = () => {
     };
     // console.log(`details`)
     // console.log(details)
-    let response = await fetch("http://aquascapetherapy.com:10000/", {
+    let response = await fetch("https://aquascapetherapy.com:10000/", {
     // let response = await fetch("http://localhost:10000/", {
       method: "POST",
       headers: {
