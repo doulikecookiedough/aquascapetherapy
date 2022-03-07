@@ -1,0 +1,78 @@
+.contactForm {
+    font-family: "DMSansMediumItalic";
+}
+
+.contactForm__labelContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm__labelName {
+    font-size: 1.5em;
+    padding-bottom: 2px;
+}
+
+.contactForm__labelInput {
+    margin: 2.5% 0;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 2% 4%;
+    font-size: 1.25em;
+    outline: none;
+    font-family: "DMSansItalic";
+}
+
+.contactForm__messageTitle {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+
+.contactForm__messageBox {
+    outline: none;
+    font-family: "DMSansRegular";
+    padding: 5%;
+    font-size: 1.15em;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contactForm__buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm__button {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: "DMSansBold";
+    color: white;
+    border: none;
+    padding: 3% 5%;
+    box-shadow: none;
+    border-radius: 5px;
+    background-color: #00b493;
+}
+
+@media (min-width: 640px) {
+    .contactForm__messageBox {
+        height: 150px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contactForm__labelContainer {
+        margin: 2% 7%;
+    }
+
+    .contactForm__labelInput {
+        margin: 1.5% 0;
+        font-size: 1em;
+        padding: 3% 5%;
+    }
+
+    .contactForm__messageBox {
+        height: 200px;
+    }
+}

@@ -1,0 +1,50 @@
+.aqPortfolio__detailsDataValue {
+    margin: 0;
+    font-family: "DMSansItalic";
+    font-size: 0.9em;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.aqPortfolio__detailsHeading {
+    font-family: "DMSansBold";
+    font-size: 1em;
+    border-bottom: 2px solid rgba(109, 191, 160, 0.5);
+    padding-bottom: 5px;
+}
+
+.aqPortfolio__detailsData {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2% 5%;
+    height: auto;
+}
+
+.aqPortfolio__detailsData-expansionContainer {
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.aqPortfolio__expansionCollapse {
+    overflow: hidden;
+    height: auto;
+    max-height: 0;
+}
+
+.aqPortfolio__expansionExpand {
+    height: auto;
+    max-height: 300px;
+}
+
+.aqPortfolio__buttonSeeMore {
+    z-index: 5;
+    font-family: "DMSansMediumItalic";
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin-top: 10px;
+    color: #6679b0;
+}

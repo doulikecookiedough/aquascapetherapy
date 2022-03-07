@@ -1,0 +1,186 @@
+/* Carousel CSS */
+.carouselButton {
+    width: 50px;
+    height: 50px;
+    top: 43%;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carouselButton__previousItem {
+    background-image: url(./Assets/previous-Inactive.svg);
+    position: absolute;
+    left: 0;
+    margin: 25px;
+    margin-left: -10%;
+    z-index: 10;
+}
+
+.carouselButton__nextItem {
+    background-image: url(./Assets/next-Inactive.svg);
+    position: absolute;
+    right: 0;
+    margin: 25px;
+    margin-right: -10%;
+    z-index: 10;
+}
+
+.carousel {
+    position: relative;
+    width: 70%;
+    max-width: 1000px; 
+}
+
+.carousel__layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12% 0 8% 0;
+    transition: 1s;
+}
+
+.carousel__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__active {
+    position: relative;
+    opacity: 1;
+}
+
+.carousel__inactive {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Aquarium Layout CSS */
+.aqPortfolio__introText {
+    font-family: "PrataRegular";
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: 5s;
+}
+
+.soak__active {
+    color: #4061a3;
+}
+
+.soak__inactive {
+    color: #609f89;
+}
+
+.aqPortfolio__layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aqPortfolio {
+    display: flex;
+    /* align-items: center; */
+    /* height: 100vh; */
+}
+
+.aqPortfolio__itemTitle {
+    font-family: "DMSansBold";
+    font-size: 3em;
+    color: #414042;
+}
+
+.aqPortfolio__quoteColour {
+    color: #609f89;
+}
+
+.aqPortfolio__aquascape {
+    width: 100%;
+}
+
+.aqPortfolio__details {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    color: #58595b;
+}
+
+@media (max-width: 1080px) {
+    .aqPortfolio__details {
+        flex-wrap: wrap;
+        min-width: 600px;
+    }
+
+    .carouselButton__previousItem {
+        margin: -75px;
+        margin-left: -15%;
+    }
+    
+    .carouselButton__nextItem {
+        margin: -75px;
+        margin-right: -15%;
+    }
+
+    .aqPortfolio__introText {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 640px) {
+    .carouselButton__previousItem:hover {
+        background-image: url(./Assets/previous-Hover.svg);
+    }
+    
+    .carouselButton__nextItem:hover {
+        background-image: url(./Assets/next-Hover.svg);
+    }
+}
+
+@media (max-width: 640px) {
+    .carousel__layout {
+        margin: 125px 0 100px 0;
+    }
+
+    .carouselButton__previousItem, .carouselButton__nextItem {
+        width: 35px;
+        height: 35px;
+        margin: -50px;
+    }
+
+    .carouselButton__previousItem {
+        margin-left: -17%;
+    }
+    
+    .carouselButton__nextItem {
+        margin-right: -17%;
+    }
+
+    .aqPortfolio__introText {
+        font-size: 16px;
+    }
+
+    .aqPortfolio__itemTitle {
+        font-size: 35px;
+        text-align: center;
+        min-width: 350px;
+    }
+
+    .aqPortfolio__details {
+        flex-direction: column;
+        min-width: auto;
+        padding-top: 15px;
+    }
+
+    .aqPortfolio__details div:nth-child(3) {
+        display: none;
+    }
+
+    .aqPortfolio__details div:nth-child(4) {
+        display: none;
+    }
+}

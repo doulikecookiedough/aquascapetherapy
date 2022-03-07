@@ -1,0 +1,47 @@
+.contactWrapper {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.contact__backgroundImage {
+    transition: 3s;
+    object-fit: cover;
+    z-index: -5;
+    width: 100%;
+}
+
+.contact__formContainer {
+    position: absolute;
+}
+
+.contact__formHeading {
+    font-family: "DMSansBold";
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact__formSubHeading {
+    font-family: "DMSansRegular";
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.25em;
+    max-width: 450px;
+}
+
+@media (max-width: 640px) {
+    .contact__backgroundImage {
+        height: 100%;
+    }
+
+    .contact__formSubHeading {
+        font-size: 1.15em;
+        margin: 0 5%;
+    }
+}
