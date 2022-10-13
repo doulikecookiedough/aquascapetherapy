@@ -2,8 +2,7 @@
 
 This is a website for my book project "Aquascape Therapy" built using React.js & HTML/CSS
 
-Notes:
-- Images URLs need to be replaced with sources from a CDN to increase delivery speed.
+Comment (2022/10): Images URLs need to be replaced with sources from a CDN to increase delivery speed.
 
 ## Automated Notes
 
