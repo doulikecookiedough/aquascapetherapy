@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Aquascape Therapy
+
+This is a website for my book project "Aquascape Therapy" built using React.js & HTML/CSS
+
+Notes:
+- Images URLs need to be replaced with sources from a CDN to increase delivery speed.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
