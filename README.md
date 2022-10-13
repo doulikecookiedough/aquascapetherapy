@@ -5,6 +5,8 @@ This is a website for my book project "Aquascape Therapy" built using React.js &
 Notes:
 - Images URLs need to be replaced with sources from a CDN to increase delivery speed.
 
+## Automated Notes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
